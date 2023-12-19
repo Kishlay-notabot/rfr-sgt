@@ -1,0 +1,1 @@
+A simple project to solve component sourcing problems faced by researchers at SGTU.

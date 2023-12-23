@@ -30,12 +30,33 @@
   <br>
 
   <div class="p-1">
-    <div class="text-center me-md-3 pt-3 px-3 pt-md-5 px-md-5 overflow-hidden rounded text-dark p-5" style="width: 100%; background-color: grey;">
-      <div class="my-3 py-3 rounded" style=" box-shadow: inset 0 0 1rem #000000;">
+    <div class="text-center me-md-3 pt-3 px-3 pt-md-5 px-md-5 overflow-hidden rounded p-5" style="width: 100%; background-color: grey; color: whitesmoke;">
+      <div id="maindiv" class="my-3 py-3 rounded" style=" box-shadow: inset 0 0 1rem #000000;">
         <!-- Sample Text -->
         <h2 class="display-5">Contact Form</h2> <br>
         <p class="lead">Contact the Civil Engineering Department using this form</p> <br>
-        <div class="bg-light"></div>
+        <div id="centerform" class="rounded m-2 text-white" style="background-color: rgb(67, 68, 68); width: 50%;"><form data-netlify-recaptcha="true" method="POST" name="contact">
+        <div class="m-4">
+          <div class="mb-3">
+              <label for="InpEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="InpEmail" aria-describedby="emailHelp">
+              <div class="form-text text-white">Enter the email where we well reach you out in response.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="InpTel" class="form-label">Phone number</label>
+              <input type="tel" class="form-control" id="InpTel"> 
+              <div class="form-text text-white">Enter your mobile number </div>
+            </div>
+            <div class="mb-3">
+            <label for="textarea">Enter requirement/query or comments</label> <br>
+            <textarea rows="7" cols="50" class=" rounded"></textarea>
+            </div>
+
+        </div>
+          
+        </form>
+      </div>
         <p class="lead">Sample link: <a href="#">Sample Link</a></p> <br>
         <button type="button" class="btn btn-dark rounded">Sample Button</button>
       </div>
